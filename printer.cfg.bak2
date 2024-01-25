@@ -1,0 +1,14 @@
+[include fluidd.cfg]
+[mcu]
+serial: /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+
+[virtual_sdcard]
+path: /home/pi/printer_data/gcodes
+on_error_gcode: CANCEL_PRINT
+
+[printer]
+kinematics: none
+max_velocity: 1000
+max_accel: 1000
+
+
